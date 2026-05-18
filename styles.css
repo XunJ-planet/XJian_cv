@@ -117,6 +117,34 @@ ul {
   color: var(--muted);
 }
 
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.lang-button {
+  min-width: 58px;
+  min-height: 38px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 999px;
+  color: var(--muted);
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+  transition: background 180ms ease, color 180ms ease;
+}
+
+.lang-button.is-active {
+  color: #fff8f0;
+  background: linear-gradient(135deg, var(--accent-deep), var(--accent));
+}
+
 .nav-links a:hover,
 .contact-links a:hover {
   color: var(--accent-deep);
@@ -477,6 +505,10 @@ ul {
   .nav-links {
     gap: 12px;
     font-size: 0.95rem;
+  }
+
+  .lang-toggle {
+    margin-top: 6px;
   }
 
   .hero h1 {

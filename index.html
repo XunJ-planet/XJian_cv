@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,10 +16,14 @@
         <nav class="topbar">
           <a class="brand" href="#top">Jian</a>
           <div class="nav-links">
-            <a href="#about">关于我</a>
-            <a href="#experience">经历</a>
-            <a href="#publications">刊物</a>
-            <a href="#contact">联系</a>
+            <a href="#about" data-i18n="nav.about">About</a>
+            <a href="#experience" data-i18n="nav.experience">Experience</a>
+            <a href="#publications" data-i18n="nav.publications">Publications</a>
+            <a href="#contact" data-i18n="nav.contact">Contact</a>
+          </div>
+          <div class="lang-toggle" aria-label="Language switcher">
+            <button class="lang-button is-active" type="button" data-lang="en">EN</button>
+            <button class="lang-button" type="button" data-lang="zh">中文</button>
           </div>
         </nav>
 
@@ -27,14 +31,14 @@
           <section class="hero-copy">
             <p class="eyebrow">PERSONAL PROFILE</p>
             <h1>Xun Jian</h1>
-            <p class="hero-title">Geophysics Student</p>
-            <p class="hero-text">
+            <p class="hero-title" data-i18n="hero.title">Geophysics Student</p>
+            <p class="hero-text" data-i18n="hero.text">
               I study geophysics at SUSTech and focus on using computation, observation, and quantitative analysis
               to understand Earth and planetary systems. 
             </p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#contact">联系我</a>
-              <a class="button button-secondary" href="#publications">查看刊物</a>
+              <a class="button button-primary" href="#contact" data-i18n="hero.contact">Contact Me</a>
+              <a class="button button-secondary" href="#publications" data-i18n="hero.publications">View Publications</a>
             </div>
           </section>
 
@@ -42,7 +46,7 @@
             <div class="avatar">X.J</div>
             <dl class="quick-facts">
               <div>
-                <dt>Base</dt>
+                <dt data-i18n="facts.base">Base</dt>
                 <dd>Shenzhen, China</dd>
               </div>
               <div>
@@ -50,8 +54,8 @@
                 <dd>xunjian2003@gmail.com</dd>
               </div>
               <div>
-                <dt>Focus</dt>
-                <dd>Geophysics, Exoplanets, Planetary science</dd>
+                <dt data-i18n="facts.focus">Focus</dt>
+                <dd data-i18n="facts.focusValue">Geophysics, Exoplanets, Planetary science</dd>
               </div>
             </dl>
           </aside>
@@ -62,11 +66,11 @@
         <section class="section section-split" id="about">
           <div class="section-heading">
             <p class="eyebrow">ABOUT</p>
-            <h2>关于我</h2>
+            <h2 data-i18n="about.heading">About</h2>
           </div>
           <div class="about-grid">
             <article class="panel">
-              <p>
+              <p data-i18n="about.body">
                 I am an undergraduate student in the Department of Earth and Space Sciences at Southern University
                 of Science and Technology. My work spans numerical simulation of seismic waves, exoplanet-related
                 light-curve analysis, and Earth radiation budget studies.
@@ -75,7 +79,7 @@
             <article class="panel facts-panel">
               <div class="fact">
                 <span class="fact-value">SUSTech</span>
-                <span class="fact-label">Earth and Space Sciences</span>
+                <span class="fact-label" data-i18n="about.factLabel">Earth and Space Sciences</span>
               </div>
           
             </article>
@@ -85,17 +89,17 @@
         <section class="section" id="experience">
           <div class="section-heading">
             <p class="eyebrow">EXPERIENCE</p>
-            <h2>经历</h2>
+            <h2 data-i18n="experience.heading">Experience</h2>
           </div>
           <div class="timeline">
             <article class="timeline-item">
               <div class="timeline-meta">
                 <span>09/2022 - 06/2026</span>
-                <span>Education</span>
+                <span data-i18n="experience.item1.meta">Education</span>
               </div>
               <div class="timeline-body">
                 <h3>Southern University of Science and Technology</h3>
-                <p>
+                <p data-i18n="experience.item1.body">
                   Undergraduate student in the Department of Earth and Space Sciences, majoring in Geophysics.
                   Supervisors: Prof. Wei Zhang and Prof. Siteng Fan.
                 </p>
@@ -105,11 +109,11 @@
             <article class="timeline-item">
               <div class="timeline-meta">
                 <span>07/2025 - 09/2025</span>
-                <span>SURF student</span>
+                <span data-i18n="experience.item2.meta">SURF student</span>
               </div>
               <div class="timeline-body">
                 <h3>California Institute of Technology</h3>
-                <p>
+                <p data-i18n="experience.item2.body">
                   Summer student in the Division of Geological and Planetary Sciences, supervised by Prof. Yuk L.
                   Yung, with research connected to climate and planetary science questions.
                 </p>
@@ -135,7 +139,7 @@
         <section class="section" id="publications">
           <div class="section-heading">
             <p class="eyebrow">PUBLICATIONS</p>
-            <h2>刊物与会议报告</h2>
+            <h2 data-i18n="publications.heading">Publications & Presentations</h2>
           </div>
           <div class="publication-list">
             <article class="publication-item">
@@ -215,28 +219,28 @@
         <section class="section section-split">
           <div class="section-heading">
             <p class="eyebrow">SKILLS</p>
-            <h2>技能</h2>
+            <h2 data-i18n="skills.heading">Skills</h2>
           </div>
           <div class="skills-grid">
             <article class="panel">
-              <h3>Tools</h3>
+              <h3 data-i18n="skills.tools">Tools</h3>
               <ul class="chip-list">
                 <li>Python</li>
-                <li>C language</li>
+                <li data-i18n="skills.cLanguage">C Language</li>
                 <li>Linux</li>
-                <li>Scientific Writing</li>
-                <li>Data Visualization</li>
+                <li data-i18n="skills.scientificWriting">Scientific Writing</li>
+                <li data-i18n="skills.dataVisualization">Data Visualization</li>
               </ul>
             </article>
             <article class="panel">
-              <h3>Research Areas</h3>
+              <h3 data-i18n="skills.researchAreas">Research Areas</h3>
               <ul class="chip-list">
                 <li>Geophysics</li>
                 <li>Seismology</li>
-                <li>Earth Observation</li>
+                <li data-i18n="skills.earthObservation">Earth Observation</li>
                 <li>Exoplanets</li>
-                <li>Climate Analysis</li>
-                <li>Remote Sensing</li>
+                <li data-i18n="skills.climateAnalysis">Climate Analysis</li>
+                <li data-i18n="skills.remoteSensing">Remote Sensing</li>
               </ul>
             </article>
           </div>
@@ -245,23 +249,23 @@
         <section class="section contact-section" id="contact">
           <div class="section-heading">
             <p class="eyebrow">CONTACT</p>
-            <h2>联系我</h2>
+            <h2 data-i18n="contact.heading">Contact</h2>
           </div>
           <div class="contact-card">
-            <p>
+            <p data-i18n="contact.body">
               For collaboration, research opportunities, email is the fastest way to reach me. 
             </p>
             <div class="contact-links">
               <a href="mailto:xunjian2003@gmail.com">xunjian2003@gmail.com</a>
               <a href="mailto:12211726@mail.sustech.edu.cn">12211726@mail.sustech.edu.cn</a>
-              <a href="#top">Back to top</a>
+              <a href="#top" data-i18n="contact.backToTop">Back to top</a>
             </div>
           </div>
         </section>
       </main>
 
       <footer class="footer">
-        <p>© <span id="year"></span> Xun Jian. Academic profile and resume website.</p>
+        <p data-i18n-html="footer.text">© <span id="year"></span> Xun Jian. Academic profile and resume website.</p>
       </footer>
     </div>
 
